@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		6E2036A79B556DF9814D777F /* Pods-intro-rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intro-rx.debug.xcconfig"; path = "Target Support Files/Pods-intro-rx/Pods-intro-rx.debug.xcconfig"; sourceTree = "<group>"; };
 		81AFBA3E3C42123D82C6927C /* Pods_intro_rxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intro_rxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8479D4F8EBD0B0D0E655202D /* Pods-intro-rxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intro-rxTests.debug.xcconfig"; path = "Target Support Files/Pods-intro-rxTests/Pods-intro-rxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B728CD4B24B368F8009B6DCF /* IntroRxPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntroRxPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B7DF830E24B2BA9D0029251C /* intro-rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DF831124B2BA9D0029251C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7DF831324B2BA9D0029251C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 				8479D4F8EBD0B0D0E655202D /* Pods-intro-rxTests.debug.xcconfig */,
 				CDCB208F9CC517F2006754DB /* Pods-intro-rxTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +119,7 @@
 				B7DF831C24B2BAA00029251C /* LaunchScreen.storyboard */,
 				B7DF831F24B2BAA00029251C /* Info.plist */,
 				B7DF831924B2BAA00029251C /* Preview Content */,
+				B728CD4B24B368F8009B6DCF /* IntroRxPlayground.playground */,
 			);
 			path = "intro-rx";
 			sourceTree = "<group>";
