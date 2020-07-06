@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../Library/Autosave Information/rxplayground.playground">
-   </FileRef>
-   <FileRef
       location = "group:intro-rx.xcodeproj">
    </FileRef>
    <FileRef
