@@ -81,7 +81,7 @@ var doubleDriver: Driver<Double> {
     return doubleSubject.asDriver(onErrorJustReturn: 0.0)
 }
 
-doubleDriver.
+doubleDriver
     .drive(onNext: { double in
         print("driver double: \(double)")
     }).disposed(by: disposeBag)
