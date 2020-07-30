@@ -1,9 +1,10 @@
 import Foundation
 import RxSwift
+import RxCocoa
 
 // MARK: Observable
-let intArray = Observable.from([1,2,3,4,5])
-let secondArray = Observable.from([6,7])
+let intArray = Observable.from([1, 2, 3, 4, 5])
+let secondArray = Observable.from([6, 7])
 let disposeBag = DisposeBag()
 
 let arrayObservable = intArray
@@ -66,10 +67,22 @@ var completableProcess: Completable {
         return Disposables.create()
     }
 }
-
 completableProcess
     .subscribe(onCompleted: {
         print("process complete")
     }, onError: { error in
         print(error.localizedDescription)
     }).disposed(by: disposeBag)
+
+// MARK: Drivers
+let doubleSubject = BehaviorSubject<Double>(value: 5.0) //replays this data
+//let doubleSubject = PublishSubject<Double>() // does not replays
+var doubleDriver: Driver<Double> {
+    return doubleSubject.asDriver(onErrorJustReturn: 0.0)
+}
+
+doubleDriver.
+    .drive(onNext: { double in
+        print("driver double: \(double)")
+    }).disposed(by: disposeBag)
+doubleSubject.onNext(20.0)

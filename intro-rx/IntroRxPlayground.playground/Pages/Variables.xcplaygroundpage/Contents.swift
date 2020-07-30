@@ -45,5 +45,3 @@ stringBehaviorRelay.asObservable()
     }).disposed(by: disposeBag)
 
 stringPublishRelay.accept("Behavior Realy bar")
-
-// MARK: Drivers

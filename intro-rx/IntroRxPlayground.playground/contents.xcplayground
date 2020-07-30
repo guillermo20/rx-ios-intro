@@ -3,5 +3,7 @@
     <pages>
         <page name='Variables'/>
         <page name='Observables'/>
+        <page name='Schedulers'/>
+        <page name='Operators'/>
     </pages>
 </playground>
